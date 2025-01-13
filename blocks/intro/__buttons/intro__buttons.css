@@ -1,0 +1,7 @@
+.intro__buttons {
+  display: flex;
+  max-width: 542px;
+  flex-direction: row;
+  gap: 16px;
+  padding-top: 40px;
+}

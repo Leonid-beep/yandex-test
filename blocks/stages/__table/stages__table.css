@@ -1,0 +1,7 @@
+.stages__table {
+  display: grid;
+  height: 396px;
+  margin-top: 54px;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}

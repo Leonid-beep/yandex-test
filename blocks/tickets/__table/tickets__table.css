@@ -1,0 +1,22 @@
+.tickets__table {
+  margin-top: 60px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: none;
+}
+
+.tickets__table tr:first-child td {
+  border-top: none;
+}
+
+.tickets__table tr:last-child td {
+  border-bottom: none;
+}
+
+.tickets__table tr td:first-child {
+  border-left: none;
+}
+
+.tickets__table tr td:last-child {
+  border-right: none;
+}

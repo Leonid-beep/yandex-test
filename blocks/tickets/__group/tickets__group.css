@@ -1,0 +1,6 @@
+.tickets__group {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin-top: 64px;
+}

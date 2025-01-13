@@ -1,0 +1,10 @@
+.stages__number {
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 16px;
+  font-family: 'Golos-Text';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: #313131;
+}

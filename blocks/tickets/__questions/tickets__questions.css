@@ -1,0 +1,9 @@
+.tickets__questions {
+  margin: 0;
+  margin-top: 48px;
+  font-family: 'Golos-Text';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  color: #3057A2;
+}

@@ -1,0 +1,11 @@
+.stages__item {
+  display: flex;
+  flex-direction: row;
+  width: 394px;
+  align-items: start;
+  justify-content: start;
+}
+
+.stages__item:nth-child(5) {
+  grid-column: span 2;
+}

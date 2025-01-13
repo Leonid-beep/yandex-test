@@ -1,0 +1,15 @@
+@import url('./__text/intro__text.css');
+@import url('./__pic/intro__pic.css');
+@import url('./__headline/intro__headline.css');
+@import url('./__caption/intro__caption.css');
+@import url('./__buttons/intro__buttons.css');
+@import url('./__button/intro__button.css');
+
+.intro {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  padding-top: 62px;
+  background-color: #E9DED4;
+}

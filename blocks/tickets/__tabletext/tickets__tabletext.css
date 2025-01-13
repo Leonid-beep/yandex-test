@@ -1,0 +1,10 @@
+.tickets__tabletext {
+  margin: 0;
+  font-family: 'Golos-Text';
+  font-size: 20px;
+  line-height: 120%;
+  color: #313131;
+  border: 1px solid #D0D0D0;
+  padding: 10px;
+  vertical-align: top;
+}

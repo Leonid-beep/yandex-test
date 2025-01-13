@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  src: url("./fonts/Inter-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 500;
+  src: url("./fonts/Inter-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 900;
+  src: url("./fonts/Inter-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Merriweather-Regular.ttf")
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/Merriweather-Bold.ttf")
+}
+
+@font-face {
+  font-family: 'Golos-Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Golos-Text_Regular.ttf")
+}
+
+@font-face {
+  font-family: 'Golos-Text';
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/Golos-Text_Medium.ttf")
+}
+
+@font-face {
+  font-family: 'Golos-Text';
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/Golos-Text_DemiBold.ttf")
+}

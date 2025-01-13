@@ -1,0 +1,12 @@
+.button__submit-text {
+  margin: 0;
+  font-family: 'Golos-Text';
+  max-width: 162px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20.8px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}

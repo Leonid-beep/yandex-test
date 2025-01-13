@@ -1,0 +1,13 @@
+@import url('./_position_normal/intro__headline_position_normal.css');
+@import url('./_position_right/intro__headline_position_right.css');
+
+.intro__headline {
+  margin: 0;
+  font-family: 'Merriweather';
+  max-width: 542px;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 66px;
+  color: #313131;
+  text-transform: uppercase;
+}

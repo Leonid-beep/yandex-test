@@ -1,0 +1,11 @@
+.intro__caption {
+  margin: 0;
+  font-family: 'Golos-Text';
+  max-width: 542px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.4px;
+  text-align: center;
+  color: #313131;
+  padding-top: 24px;
+}

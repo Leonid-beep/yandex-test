@@ -1,0 +1,14 @@
+@import url('./_type_submit/intro__button_type_submit.css');
+@import url('./_type_more/intro__button_type_more.css');
+@import url('./__more-text/button__more-text.css');
+@import url('./__submit-text/button__submit-text.css');
+
+.intro__button {
+  width: 263px;
+  height: 72px;
+  border-radius: 66px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
