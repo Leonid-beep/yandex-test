@@ -1,8 +1,7 @@
 @import url('./__logo/header__logo.css');
 
 .header {
-  width: 100%;
-  background-color: #E9DED4;
+  width: min(100%, 1222px);
   height: 36px;
   display: flex;
   align-items: start;

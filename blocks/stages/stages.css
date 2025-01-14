@@ -12,4 +12,5 @@
   flex-direction: column;
   align-items: start;
   background-color: white;
+  width: min(100%, 1222px);
 }

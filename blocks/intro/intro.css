@@ -7,8 +7,9 @@
 @import url('./__circletext/intro__circletext.css');
 
 .intro {
-  justify-content: center;
-  width: 100%;
+  position: relative;
+  justify-content: start;
+  width: min(100%, 1222px);
   display: flex;
   flex-direction: row;
   align-items: start;

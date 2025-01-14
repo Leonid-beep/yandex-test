@@ -5,15 +5,6 @@
   font-size: 16px;
   line-height: 120%;
   color: #313131;
-  margin-left: 349px;
   margin-top: 40px;
   margin-bottom: 72px;
-  width: 1222px;
-}
-
-
-@media screen and (max-width: 1750px) {
-  .footer__note {
-    margin-left: 72px;
-  }
 }
