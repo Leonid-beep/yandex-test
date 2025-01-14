@@ -4,4 +4,8 @@
   margin: 0 auto;
   font-family: 'Merriweather', 'Golos-Text', Arial, sans-serif;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }

@@ -1,12 +1,4 @@
 .intro__text {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  margin-left: 349px;
-}
-
-@media screen and (max-width: 1750px) {
-  .intro__text {
-    margin-left: 72px;
-  }
 }
