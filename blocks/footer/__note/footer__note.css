@@ -10,3 +10,10 @@
   margin-bottom: 72px;
   width: 1222px;
 }
+
+
+@media screen and (max-width: 1750px) {
+  .footer__note {
+    margin-left: 72px;
+  }
+}

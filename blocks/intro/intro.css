@@ -4,6 +4,7 @@
 @import url('./__caption/intro__caption.css');
 @import url('./__buttons/intro__buttons.css');
 @import url('./__button/intro__button.css');
+@import url('./__circletext/intro__circletext.css');
 
 .intro {
   width: 100%;
