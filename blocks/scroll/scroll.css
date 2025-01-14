@@ -1,0 +1,10 @@
+@import url('./__text/scroll__text.css');
+
+.scroll {
+  width: 100%;
+  background-color: #F54932;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

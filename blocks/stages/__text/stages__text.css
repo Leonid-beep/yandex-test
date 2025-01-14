@@ -7,3 +7,7 @@
   line-height: 120%;
   color: #313131;
 }
+
+.stages__item:nth-child(7) .stages__text {
+  width: 446px;
+}

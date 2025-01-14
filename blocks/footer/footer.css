@@ -1,0 +1,7 @@
+@import url('./__note/footer__note.css');
+
+.footer {
+  display: flex;
+  align-items: start;
+  background-color: #E9DED4;
+}

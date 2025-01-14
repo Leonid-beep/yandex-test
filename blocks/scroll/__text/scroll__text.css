@@ -1,0 +1,10 @@
+.scroll__text {
+  margin: 0;
+  font-family: 'Merriweather';
+  max-width: 100%;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 110%;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}

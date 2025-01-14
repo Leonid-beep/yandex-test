@@ -1,0 +1,16 @@
+.members__more {
+  margin: 0;
+  background-color: white;
+  border: 1px solid;
+  color: #3057A2;
+  width: 113px;
+  border-radius: 62px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Golos-Text';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+}

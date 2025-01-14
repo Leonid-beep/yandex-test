@@ -1,0 +1,10 @@
+.members__heading {
+  margin: 0;
+  font-family: 'Merriweather';
+  width: 806px;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 120%;
+  color: #313131;
+  text-transform: uppercase;
+}
