@@ -5,6 +5,14 @@
 @import url('./__item/stages__item.css');
 @import url('./__number/stages__number.css');
 @import url('./__text/stages__text.css');
+@import url('./__switches/stages__switches.css');
+@import url('./__button/stages__button.css');
+@import url('./__dots/stages__dots.css');
+@import url('./__dot/stages__dot.css');
+@import url('./__dot/_active/stages__dot_active.css');
+@import url('./__slide/stages__slide.css');
+@import url('./__slide/_active/stages__slide_active.css');
+
 
 .stages {
   margin-top: 200px;

@@ -1,78 +1,45 @@
-// Обёрнём код в функцию, чтобы избежать конфликтов с глобальными переменными.
 (function() {
-  // Получаем все карточки участников
   const members = document.querySelectorAll('.members__profile');
-  const totalMembers = members.length; // всего участников
-
-  // Получаем кнопки и счётчики (их две пары при разных разрешениях)
+  const totalMembers = members.length;
   const prevButtons = document.querySelectorAll('#prev');
   const nextButtons = document.querySelectorAll('#next');
   const counters = document.querySelectorAll('#counter');
 
-  // Индекс "слайда" (текущее смещение, зависящее от разрешения).
-  // Для широкоэкрана (≥721px) каждый "слайд" = 3 участника,
-  // для мобильного экрана (≤720px) каждый "слайд" = 1 участник.
   let currentSlide = 0;
 
-  /**
-   * Проверяем, широкое ли сейчас окно:
-   * true, если ширина ≥ 721px; false, если ≤ 720px.
-   */
   function isWideScreen() {
     return window.innerWidth >= 721;
   }
 
-  /**
-   * Сколько участников показывать на одном "слайде" в зависимости от ширины экрана.
-   */
   function getMembersPerSlide() {
     return isWideScreen() ? 3 : 1;
   }
 
-  /**
-   * Сколько всего слайдов (не превышая общее число участников).
-   * Например, при 6 участниках и показе по 3 за раз будет 2 "слайда" (индексы 0 и 1).
-   * При мобильном экране (1 за раз) будет 6 "слайдов" (индексы от 0 до 5).
-   */
   function getMaxSlideIndex() {
     return Math.ceil(totalMembers / getMembersPerSlide()) - 1;
   }
 
-  /**
-   * Прячем всех участников, чтобы потом показать только нужных
-   */
   function hideAllMembers() {
     members.forEach(member => {
       member.style.display = 'none';
     });
   }
 
-  /**
-   * Обновляем счётчик (например, "3 / 6" или "1 / 6").
-   * Для широкого экрана, если currentSlide = 0, показывается 3 из 6, если = 1, то 6/6.
-   * Для мобильного, если currentSlide = 0, то 1/6; =1 -> 2/6 и т.д.
-   */
   function updateCounters() {
-    // Сколько участников уже "пролистано" + 1 слайд
     const membersPerSlide = getMembersPerSlide();
     const currentCount = Math.min((currentSlide + 1) * membersPerSlide, totalMembers);
 
-    // Обновим все счётчики на странице
     counters.forEach(counterElem => {
-      counterElem.textContent = currentCount + ' / ' + totalMembers;
+      const totalSpan = counterElem.querySelector('.members__total');
+      if (totalSpan) {
+        counterElem.innerHTML = `${currentCount}&nbsp;<span class="members__total">${totalSpan.innerHTML}</span>`;
+      }
     });
   }
 
-  /**
-   * Показываем участников, соответствующих текущему слайду
-   */
   function showSlide(slideIndex) {
     hideAllMembers();
-
-    // Сколько участников на одном слайде
     const membersPerSlide = getMembersPerSlide();
-
-    // Начало и конец диапазона в массиве всех участников
     const start = slideIndex * membersPerSlide;
     const end = start + membersPerSlide;
 
@@ -81,32 +48,27 @@
         members[i].style.display = 'block';
       }
     }
-
-    // После отображения — обновляем текст счётчиков
     updateCounters();
   }
 
-  /**
-   * Листаем на один слайд вперёд
-   */
   function nextSlide() {
     if (currentSlide < getMaxSlideIndex()) {
       currentSlide++;
+    } else {
+      currentSlide = 0;
     }
     showSlide(currentSlide);
   }
 
-  /**
-   * Листаем на один слайд назад
-   */
   function prevSlide() {
     if (currentSlide > 0) {
       currentSlide--;
+    } else {
+      currentSlide = getMaxSlideIndex();
     }
     showSlide(currentSlide);
   }
 
-  // Вешаем обработчики на все кнопки "влево" и "вправо" (и верхние, и нижние)
   prevButtons.forEach(button => {
     button.addEventListener('click', prevSlide);
   });
@@ -114,14 +76,118 @@
     button.addEventListener('click', nextSlide);
   });
 
-  // При смене размеров окна — обновим слайды.
-  // Обычно сбрасывают currentSlide = 0, но можно оставить и тот же индекс.
-  // Ниже пример – сброс к 0, если хотите.
   window.addEventListener('resize', () => {
     currentSlide = 0;
     showSlide(currentSlide);
+  });
+
+  setInterval(nextSlide, 4000);
+
+  showSlide(currentSlide);
+})();
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const stagesTable = document.querySelector('.stages__table');
+  const items = Array.from(document.querySelectorAll('.stages__item'));
+  const prevButton = document.getElementById('prev_button');
+  const nextButton = document.getElementById('next_button');
+  const dots = Array.from(document.querySelectorAll('.stages__dot'));
+
+  let currentSlideIndex = 0; // Индекс текущего слайда
+  let slides = []; // Массив слайдов
+
+  function createSlides() {
+    if (window.innerWidth <= 720) {
+      stagesTable.innerHTML = '';
+
+      slides = [
+        [items[0], items[1]],
+        [items[2]],
+        [items[3], items[4]],
+        [items[5]],
+        [items[6]],
+      ];
+
+      slides.forEach((slideItems, index) => {
+        const slide = document.createElement('div');
+        slide.classList.add('stages__slide');
+        slideItems.forEach(item => slide.appendChild(item));
+        stagesTable.appendChild(slide);
+      });
+
+      updateSlides();
+    } else {
+      if (slides.length > 0) {
+        stagesTable.innerHTML = '';
+        items.forEach(item => stagesTable.appendChild(item));
+        slides = [];
+      }
+    }
+  }
+
+  function updateSlides() {
+    const allSlides = document.querySelectorAll('.stages__slide');
+    allSlides.forEach((slide, index) => {
+      if (index === currentSlideIndex) {
+        slide.classList.add('stages__slide_active');
+      } else {
+        slide.classList.remove('stages__slide_active');
+      }
+    });
+
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('stages__dot_active', index === currentSlideIndex);
+    });
+
+    prevButton.disabled = currentSlideIndex === 0;
+    nextButton.disabled = currentSlideIndex === slides.length - 1;
+  }
+
+  function showPrevSlide() {
+    if (currentSlideIndex > 0) {
+      currentSlideIndex--;
+    } else {
+      currentSlideIndex = slides.length - 1;
+    }
+    updateSlides();
+  }
+
+  function showNextSlide() {
+    if (currentSlideIndex < slides.length - 1) {
+      currentSlideIndex++;
+    } else {
+      currentSlideIndex = 0;
+    }
+    updateSlides();
+  }
+
+  prevButton.addEventListener('click', showPrevSlide);
+  nextButton.addEventListener('click', showNextSlide);
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      currentSlideIndex = index;
+      updateSlides();
+    });
+  });
+
+  createSlides();
+  window.addEventListener('resize', createSlides);
 });
 
-// Изначально покажем первый "слайд"
-showSlide(currentSlide);
-})();
+
+document.querySelector('.intro__button_type_submit').addEventListener('click', function() {
+    const stagesElement = document.querySelector('.tickets');
+    if (stagesElement) {
+      stagesElement.scrollIntoView({ behavior: 'smooth' });
+    }
+});
+
+document.querySelector('.intro__button_type_more').addEventListener('click', function() {
+    const stagesElement = document.querySelector('.members');
+    if (stagesElement) {
+      stagesElement.scrollIntoView({ behavior: 'smooth' });
+    }
+});

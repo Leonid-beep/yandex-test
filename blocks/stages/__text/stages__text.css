@@ -36,3 +36,17 @@
     font-size: 18px;
   }
 }
+
+@media screen and (max-width: 720px) {
+  .stages__item:nth-child(3) .stages__text,
+  .stages__item:nth-child(4) .stages__text,
+  .stages__item:nth-child(5) .stages__text,
+  .stages__item:nth-child(6) .stages__text,
+  .stages__item:nth-child(7) .stages__text {
+    width: 243px;
+  }
+  .stages__item:nth-child(1) .stages__text,
+  .stages__item:nth-child(2) .stages__text {
+    width: 239px;
+  }
+}

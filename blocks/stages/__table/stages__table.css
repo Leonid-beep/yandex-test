@@ -16,8 +16,6 @@
 
 @media screen and (max-width: 720px) {
   .stages__table {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    display: block;
   }
 }

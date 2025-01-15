@@ -10,6 +10,12 @@
 }
 
 
+@media screen and (max-width: 960px) {
+  .members__heading {
+    max-width: 550px;
+  }
+}
+
 @media screen and (max-width: 720px) {
   .members__heading {
     max-width: 335px;

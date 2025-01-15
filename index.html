@@ -127,57 +127,68 @@
             <p class="stages__text">Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</p>
           </div>
         </div>
+        <div class="stages__switches">
+          <button class="stages__button" id="prev_button">&#60;</button>
+          <div class="stages__dots">
+            <div class="stages__dot stages__dot_active"></div>
+            <div class="stages__dot"></div>
+            <div class="stages__dot"></div>
+            <div class="stages__dot"></div>
+            <div class="stages__dot"></div>
+          </div>
+          <button class="stages__button" id="next_button">&#62;</button>
+        </div>
       </section>
       <section class="members">
         <div class="members__container">
           <h2 class="members__heading">Участники турнира</h2>
           <div class="members__switches members__switches_position_up">
             <button class="members__button" id="prev">&#60;</button>
-            <div class="members__counter" id="counter">3<span class="members__total">/6</span></div>
+            <div class="members__counter" id="counter">3 &nbsp;<span class="members__total">/ 6</span></div>
             <button class="members__button" id="next">&#62;</button>
           </div>
         </div>
         <div class="members__gallery">
           <div class="members__profile">
-            <img class="members__photo" src="./images/profile.svg" alt="Профиль">
+            <img class="members__photo" src="./images/kapablanka.jpg" alt="Хозе-Рауль Капабланка">
             <p class="members__name">Хозе-Рауль Капабланка</p>
             <p class="members__status">Чемпион мира по шахматам</p>
-            <button class="members__more" id="prev">Подробнее</button>
+            <button class="members__more" onclick="window.open('https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BF%D0%B0%D0%B1%D0%BB%D0%B0%D0%BD%D0%BA%D0%B0,_%D0%A5%D0%BE%D1%81%D0%B5_%D0%A0%D0%B0%D1%83%D0%BB%D1%8C', '_blank')">Подробнее</button>
           </div>
           <div class="members__profile">
-            <img class="members__photo" src="./images/profile.svg" alt="Профиль">
+            <img class="members__photo" src="./images/lasker.jpg" alt="Эммануил Ласкер">
             <p class="members__name">Эммануил Ласкер</p>
             <p class="members__status">Чемпион мира по шахматам</p>
-            <button class="members__more" id="prev">Подробнее</button>
+            <button class="members__more" onclick="window.open('https://ru.wikipedia.org/wiki/%D0%9B%D0%B0%D1%81%D0%BA%D0%B5%D1%80,_%D0%AD%D0%BC%D0%B0%D0%BD%D1%83%D0%B8%D0%BB', '_blank')">Подробнее</button>
           </div>
           <div class="members__profile">
-            <img class="members__photo" src="./images/profile.svg" alt="Профиль">
+            <img class="members__photo" src="./images/alexin.jpg" alt="Александр Алехин">
             <p class="members__name">Александр Алехин</p>
             <p class="members__status">Чемпион мира по шахматам</p>
-            <button class="members__more" id="prev">Подробнее</button>
+            <button class="members__more" onclick="window.open('https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B5%D1%85%D0%B8%D0%BD,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D0%B8%D1%87', '_blank')">Подробнее</button>
           </div>
           <div class="members__profile">
-            <img class="members__photo" src="./images/profile.svg" alt="Профиль">
+            <img class="members__photo" src="./images/nimz.jpg" alt="Арон Нимцович">
             <p class="members__name">Арон Нимцович</p>
             <p class="members__status">Чемпион мира по шахматам</p>
-            <button class="members__more" id="prev">Подробнее</button>
+            <button class="members__more" onclick="window.open('https://ru.wikipedia.org/wiki/%D0%9D%D0%B8%D0%BC%D1%86%D0%BE%D0%B2%D0%B8%D1%87,_%D0%90%D1%80%D0%BE%D0%BD_%D0%98%D1%81%D0%B0%D0%B5%D0%B2%D0%B8%D1%87', '_blank')">Подробнее</button>
           </div>
           <div class="members__profile">
-            <img class="members__photo" src="./images/profile.svg" alt="Профиль">
+            <img class="members__photo" src="./images/reti.jpg" alt="Рихард Рети">
             <p class="members__name">Рихард Рети</p>
             <p class="members__status">Чемпион мира по шахматам</p>
-            <button class="members__more" id="prev">Подробнее</button>
+            <button class="members__more" onclick="window.open('https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D1%82%D0%B8,_%D0%A0%D0%B8%D1%85%D0%B0%D1%80%D0%B4', '_blank')">Подробнее</button>
           </div>
           <div class="members__profile">
-            <img class="members__photo" src="./images/profile.svg" alt="Профиль">
+            <img class="members__photo" src="./images/bender.jpeg" alt="Остап Бендер">
             <p class="members__name">Остап Бендер</p>
             <p class="members__status">Гроссмейстер</p>
-            <button class="members__more" id="prev">Подробнее</button>
+            <button class="members__more" onclick="window.open('https://ru.wikipedia.org/wiki/%D0%9E%D1%81%D1%82%D0%B0%D0%BF_%D0%91%D0%B5%D0%BD%D0%B4%D0%B5%D1%80', '_blank')">Подробнее</button>
           </div>
         </div>
         <div class="members__switches members__switches_position_down">
           <button class="members__button members__button_position_down" id="prev">&#60;</button>
-          <div class="members__counter members__counter_position_down" id="counter">1<span class="members__total">/6</span></div>
+          <div class="members__counter members__counter_position_down" id="counter">1 &nbsp;<span class="members__total">/ 6</span></div>
           <button class="members__button members__button_position_down" id="next">&#62;</button>
         </div>
       </section>

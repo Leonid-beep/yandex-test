@@ -15,6 +15,12 @@
 
 @media screen and (max-width: 960px) {
   .members__profile {
-    width: 244px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .members__profile {
+    width: 277px;
   }
 }

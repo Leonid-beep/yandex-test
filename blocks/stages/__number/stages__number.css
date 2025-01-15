@@ -8,3 +8,17 @@
   line-height: 120%;
   color: #313131;
 }
+
+
+@media screen and (max-width: 720px) {
+  .stages__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    border: 0;
+  }
+}

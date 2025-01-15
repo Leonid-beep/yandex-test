@@ -1,0 +1,5 @@
+.stages__slide_active {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}

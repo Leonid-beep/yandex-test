@@ -1,0 +1,6 @@
+.stages__dots {
+  display: flex;
+  gap: 6px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
