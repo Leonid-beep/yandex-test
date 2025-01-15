@@ -12,3 +12,12 @@
   user-select: none;
   font-size: 24px;
 }
+
+
+.members__button:hover {
+  background-color: #FBCE51;
+}
+
+.members__button:disabled {
+  background-color: #D6D6D6;
+}

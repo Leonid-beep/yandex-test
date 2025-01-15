@@ -10,3 +10,12 @@
     opacity: 90%;
   }
 }
+
+.intro__button_type_more:hover {
+  opacity: 100%;
+  background-color: #1F1F1F;
+}
+
+.intro__button_type_more:hover .button__more-text {
+  color: white;
+}

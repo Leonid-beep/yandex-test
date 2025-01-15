@@ -1,10 +1,13 @@
 @import url('./__text/scroll__text.css');
+@import url('./__content/scroll__content.css');
 
 .scroll {
   width: 100%;
   background-color: #F54932;
   height: 60px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
 }

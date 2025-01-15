@@ -13,4 +13,13 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 120%;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.members__more:hover {
+  background-color: #3057A2;
+  color: white;
 }
