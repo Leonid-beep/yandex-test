@@ -21,13 +21,21 @@
   flex-direction: column;
   align-items: start;
   background-color: white;
-  width: min(100%, 1222px);
+  width: min(95%, 1222px);
 }
+
 
 @media screen and (max-width: 720px) {
   .members {
     align-items: center;
     margin-top: 110px;
     width: 335px;
+  }
+}
+
+
+@media screen and (max-width: 350px) {
+  .members {
+    width: 100%;
   }
 }

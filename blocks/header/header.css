@@ -1,18 +1,23 @@
 @import url('./__logo/header__logo.css');
 
 .header {
-  width: min(100%, 1222px);
+  width: min(95%, 1222px);
   height: 36px;
   display: flex;
   align-items: start;
   padding-top: 26px;
 }
 
-
 @media screen and (max-width: 720px) {
   .header {
     width: 335px;
     height: 32px;
     padding-top: 18px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .header {
+    width: 100%;
   }
 }

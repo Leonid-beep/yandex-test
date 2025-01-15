@@ -1,7 +1,7 @@
 @import url('./__note/footer__note.css');
 
 .footer {
-  width: min(100%, 1222px);
+  width: min(95%, 1222px);
   display: flex;
   align-items: start;
   background-color: #E9DED4;
@@ -10,5 +10,11 @@
 @media screen and (max-width: 720px) {
   .footer {
     width: 335px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .footer {
+    width: 100%;
   }
 }

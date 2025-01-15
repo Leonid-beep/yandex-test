@@ -4,6 +4,7 @@
 @import url('./__text/_position_down/tickets__text_position_down.css');
 @import url('./__group/tickets__group.css');
 @import url('./__pic/tickets__pic.css');
+@import url('./__info/tickets__info.css');
 @import url('./__table/tickets__table.css');
 @import url('./__tabletext/tickets__tabletext.css');
 @import url('./__questions/tickets__questions.css');
@@ -16,11 +17,17 @@
   flex-direction: column;
   align-items: start;
   background-color: white;
-  width: min(100%, 1222px);
+  width: min(95%, 1222px);
 }
 
 @media screen and (max-width: 720px) {
   .tickets {
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .tickets {
+    width: 100%;
   }
 }

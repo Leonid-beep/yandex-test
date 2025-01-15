@@ -1,4 +1,5 @@
 .tickets__table {
+  margin: 0;
   margin-top: 60px;
   border-collapse: collapse;
   border-spacing: 0;
@@ -26,6 +27,7 @@
     display: block;
     width: 100%;
     margin-top: 44px;
+    border-collapse: collapse;
   }
 
  .tickets__table tr {
@@ -38,4 +40,10 @@
   .tickets__table tr:last-child {
      border: none;
    }
+}
+
+@media screen and (max-width: 350px) {
+  .tickets__table {
+    width: 75%;
+  }
 }

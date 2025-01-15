@@ -7,7 +7,7 @@
 
 @media screen and (max-width: 960px) {
   .tickets__pic {
-    margin-right: 10px;
+    margin-right: -15px;
   }
 }
 
@@ -16,5 +16,11 @@
     margin: 0;
     width: 100%;
     height: 402px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .tickets__pic {
+    width: 95%;
   }
 }

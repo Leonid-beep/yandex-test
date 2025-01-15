@@ -24,3 +24,9 @@
     padding: 0;
   }
 }
+
+@media screen and (max-width: 350px) {
+  .tickets__tabletext {
+    font-size: 14px;
+  }
+}
