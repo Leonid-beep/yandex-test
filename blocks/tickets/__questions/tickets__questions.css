@@ -7,3 +7,16 @@
   line-height: 120%;
   color: #3057A2;
 }
+
+@media screen and (max-width: 960px) {
+  .tickets__questions {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .tickets__questions {
+    margin-top: 40px;
+    width: 100%;
+  }
+}

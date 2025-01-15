@@ -9,3 +9,11 @@
   margin-top: auto;
   margin-bottom: auto;
 }
+
+
+@media screen and (max-width: 720px) {
+  .button__more-text {
+    line-height: 130%;
+    max-width: 173px;
+  }
+}

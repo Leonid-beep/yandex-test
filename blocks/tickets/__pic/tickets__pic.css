@@ -4,3 +4,17 @@
   margin-left: -27px;
   margin-right: 44px;
 }
+
+@media screen and (max-width: 960px) {
+  .tickets__pic {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .tickets__pic {
+    margin: 0;
+    width: 100%;
+    height: 402px;
+  }
+}

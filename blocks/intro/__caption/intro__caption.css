@@ -8,4 +8,13 @@
   text-align: center;
   color: #313131;
   padding-top: 24px;
+  z-index: 2;
+}
+
+@media screen and (max-width: 720px) {
+  .intro__caption {
+    max-width: 335px;
+    line-height: 130%;
+    text-align: start;
+  }
 }

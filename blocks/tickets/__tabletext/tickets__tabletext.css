@@ -8,3 +8,19 @@
   padding: 10px;
   vertical-align: top;
 }
+
+
+@media screen and (max-width: 960px) {
+  .tickets__tabletext {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .tickets__tabletext {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0;
+  }
+}

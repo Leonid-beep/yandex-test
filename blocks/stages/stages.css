@@ -14,3 +14,11 @@
   background-color: white;
   width: min(100%, 1222px);
 }
+
+
+@media screen and (max-width: 720px) {
+  .stages {
+    align-items: center;
+    margin-top: 120px;
+  }
+}

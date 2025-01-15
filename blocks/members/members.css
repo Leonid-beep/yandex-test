@@ -10,6 +10,10 @@
 @import url('./__name/members__name.css');
 @import url('./__status/members__status.css');
 @import url('./__more/members__more.css');
+@import url('./__switches/_position_down/members__switches_position_down.css');
+@import url('./__switches/_position_up/members__switches_position_up.css');
+@import url('./__button/_position_down/members__button_position_down.css');
+@import url('./__counter/_position_down/members__counter_position_down.css');
 
 .members {
   margin-top: 200px;
@@ -18,4 +22,12 @@
   align-items: start;
   background-color: white;
   width: min(100%, 1222px);
+}
+
+@media screen and (max-width: 720px) {
+  .members {
+    align-items: center;
+    margin-top: 120px;
+    width: 335px;
+  }
 }

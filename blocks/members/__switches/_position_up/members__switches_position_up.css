@@ -1,0 +1,5 @@
+@media screen and (max-width: 720px) {
+  .members__switches_position_up {
+    display: none;
+  }
+}

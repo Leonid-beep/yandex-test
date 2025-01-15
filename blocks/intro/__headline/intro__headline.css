@@ -10,4 +10,13 @@
   line-height: 66px;
   color: #313131;
   text-transform: uppercase;
+  z-index: 2;
+}
+
+@media screen and (max-width: 720px) {
+  .intro__headline {
+    max-width: 335px;
+    font-size: 36px;
+    line-height: 110%;
+  }
 }

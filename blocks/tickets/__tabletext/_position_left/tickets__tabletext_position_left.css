@@ -2,3 +2,10 @@
   font-weight: 400;
   opacity: 70%;
 }
+
+@media screen and (max-width: 720px) {
+  .tickets__tabletext_position_left.inline {
+    display: inline;
+    width: auto;
+  }
+}

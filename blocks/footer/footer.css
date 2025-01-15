@@ -6,3 +6,9 @@
   align-items: start;
   background-color: #E9DED4;
 }
+
+@media screen and (max-width: 720px) {
+  .footer {
+    width: 335px;
+  }
+}

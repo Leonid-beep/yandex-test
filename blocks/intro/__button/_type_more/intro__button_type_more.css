@@ -1,3 +1,12 @@
 .intro__button_type_more {
   background-color: #E9DED4;
 }
+
+
+@media screen and (max-width: 720px) {
+  .intro__button_type_more {
+    border: 0;
+    background-color: white;
+    opacity: 90%;
+  }
+}

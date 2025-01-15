@@ -1,4 +1,5 @@
 .intro__text {
   display: flex;
   flex-direction: column;
+  z-index: 2;
 }

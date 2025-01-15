@@ -9,3 +9,13 @@
   text-transform: uppercase;
   display: inline;
 }
+
+
+
+@media screen and (max-width: 720px) {
+  .stages__heading {
+    max-width: 335px;
+    font-size: 36px;
+    display: block;
+  }
+}

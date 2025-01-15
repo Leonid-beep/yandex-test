@@ -8,3 +8,11 @@
   color: #313131;
   text-transform: uppercase;
 }
+
+
+@media screen and (max-width: 720px) {
+  .members__heading {
+    max-width: 335px;
+    font-size: 36px;
+  }
+}

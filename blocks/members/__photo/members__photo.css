@@ -5,3 +5,26 @@
   border-radius: 195.56px;
   margin-bottom: 28px;
 }
+
+
+@media screen and (max-width: 1365px) {
+  .members__photo {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+  .members__photo {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .members__photo {
+    width: 244px;
+    height: 244px;
+  }
+}

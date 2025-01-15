@@ -1,3 +1,14 @@
 .tickets__tabletext_position_right {
   font-weight: 600;
 }
+
+
+@media screen and (max-width: 720px) {
+  .tickets__tabletext_position_right {
+    margin-top: 12px;
+  }
+  .tickets__tabletext_position_right.inline {
+    display: inline;
+    margin-left: 12px;
+  }
+}

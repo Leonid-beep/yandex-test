@@ -1,0 +1,11 @@
+.members__switches_position_down {
+  display: none;
+}
+
+@media screen and (max-width: 720px) {
+  .members__switches_position_down {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+  }
+}

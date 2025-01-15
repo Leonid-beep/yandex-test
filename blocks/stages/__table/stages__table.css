@@ -1,13 +1,23 @@
 .stages__table {
   display: grid;
+  width: 100%;
   grid-template-areas:
     "item1 item2 item3"
     "item4 item5 ."
     "item6 item7 item7";
-  grid-template-columns: repeat(3, 394px);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 112px 112px 136px;
   grid-gap: 20px;
   justify-content: center;
   margin-top: 54px;
   grid-auto-rows: min-content;
+}
+
+
+@media screen and (max-width: 720px) {
+  .stages__table {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }

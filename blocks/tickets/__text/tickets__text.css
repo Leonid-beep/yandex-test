@@ -9,3 +9,18 @@
   margin-top: 107px;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 960px) {
+  .tickets__text {
+    max-width: 600px;
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .tickets__text {
+    margin-top: 48px;
+    max-width: 335px;
+    font-size: 28px;
+  }
+}

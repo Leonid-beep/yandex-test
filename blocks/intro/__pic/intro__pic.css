@@ -8,3 +8,23 @@
   background: #FBCE51;
   border-radius: 50%;
 }
+
+
+@media screen and (max-width: 1365px) {
+  .intro__pic {
+    width: 600px;
+    height: 600px;
+    right: 20px;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .intro__pic {
+    width: 350px;
+    height: 350px;
+    left: auto;
+    right: auto;
+    top: 360px;
+  }
+}

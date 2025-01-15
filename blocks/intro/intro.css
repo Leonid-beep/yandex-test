@@ -16,3 +16,15 @@
   padding-top: 62px;
   background-color: #E9DED4;
 }
+
+@media screen and (max-width: 960px) {
+  .intro {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .intro {
+    padding-top: 40px;
+  }
+}

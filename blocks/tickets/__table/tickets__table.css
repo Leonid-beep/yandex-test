@@ -2,7 +2,7 @@
   margin-top: 60px;
   border-collapse: collapse;
   border-spacing: 0;
-  border: none;
+  width: 100%;
 }
 
 .tickets__table tr:first-child td {
@@ -19,4 +19,23 @@
 
 .tickets__table tr td:last-child {
   border-right: none;
+}
+
+@media screen and (max-width: 720px) {
+  .tickets__table {
+    display: block;
+    width: 100%;
+    margin-top: 44px;
+  }
+
+ .tickets__table tr {
+    display: block;
+    border: none;
+    padding: 16px 0;
+    border-bottom: 1px solid #D0D0D0;
+  }
+
+  .tickets__table tr:last-child {
+     border: none;
+   }
 }

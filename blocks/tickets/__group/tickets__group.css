@@ -4,3 +4,13 @@
   flex-direction: row;
   margin-top: 64px;
 }
+
+
+@media screen and (max-width: 720px) {
+  .tickets__group {
+    flex-direction: column;
+    margin-top: 34px;
+    align-items: center;
+    width: 335px;
+  }
+}

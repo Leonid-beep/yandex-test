@@ -18,3 +18,9 @@
   background-color: white;
   width: min(100%, 1222px);
 }
+
+@media screen and (max-width: 720px) {
+  .tickets {
+    align-items: center;
+  }
+}

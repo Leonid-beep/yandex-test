@@ -7,3 +7,12 @@
   align-items: start;
   padding-top: 26px;
 }
+
+
+@media screen and (max-width: 720px) {
+  .header {
+    width: 335px;
+    height: 32px;
+    padding-top: 18px;
+  }
+}
