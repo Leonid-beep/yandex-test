@@ -69,19 +69,33 @@
     showSlide(currentSlide);
   }
 
+  function resetAutoSlideTimer() {
+    clearInterval(autoSlideTimer);
+    autoSlideTimer = setInterval(nextSlide, 4000);
+  }
+
   prevButtons.forEach(button => {
-    button.addEventListener('click', prevSlide);
+    button.addEventListener('click', () => {
+      prevSlide();
+      resetAutoSlideTimer();
+    });
   });
+
   nextButtons.forEach(button => {
-    button.addEventListener('click', nextSlide);
+    button.addEventListener('click', () => {
+      nextSlide();
+      resetAutoSlideTimer();
+    });
   });
 
   window.addEventListener('resize', () => {
     currentSlide = 0;
     showSlide(currentSlide);
+    resetAutoSlideTimer();
   });
 
-  setInterval(nextSlide, 4000);
+
+  autoSlideTimer = setInterval(nextSlide, 4000);
 
   showSlide(currentSlide);
 })();
@@ -95,8 +109,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const nextButton = document.getElementById('next_button');
   const dots = Array.from(document.querySelectorAll('.stages__dot'));
 
-  let currentSlideIndex = 0; // Индекс текущего слайда
-  let slides = []; // Массив слайдов
+  let currentSlideIndex = 0;
+  let slides = [];
 
   function createSlides() {
     if (window.innerWidth <= 720) {
