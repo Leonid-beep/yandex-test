@@ -32,9 +32,16 @@
 
  .tickets__table tr {
     display: block;
-    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
     padding: 16px 0;
     border-bottom: 1px solid #D0D0D0;
+  }
+
+  .tickets__table tbody {
+    display: block;
+    width: 100%;
   }
 
   .tickets__table tr:last-child {

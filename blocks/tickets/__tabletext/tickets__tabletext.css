@@ -20,8 +20,10 @@
   .tickets__tabletext {
     display: block;
     width: 100%;
+    box-sizing: border-box;
     border: none;
     padding: 0;
+    margin: 0;
   }
 }
 

@@ -1,10 +1,22 @@
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .intro__circletext {
   margin: 0;
   font-family: 'Merriweather';
   font-weight: 400;
   font-size: 20.1px;
   line-height: 110%;
+  overflow: hidden;
   fill: #FFA500;
   opacity: 0.6;
   text-transform: uppercase;
+  animation: rotate 15s linear infinite;
+  transform-origin: center;
 }

@@ -1,0 +1,9 @@
+.tickets__text_resolution_low {
+  display: none;
+}
+
+@media screen and (max-width: 720px) {
+  .tickets__text_resolution_low {
+    display: block;
+  }
+}

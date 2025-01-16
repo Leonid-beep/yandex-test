@@ -13,7 +13,6 @@
 @import url('./__slide/stages__slide.css');
 @import url('./__slide/_active/stages__slide_active.css');
 
-
 .stages {
   margin-top: 200px;
   display: flex;

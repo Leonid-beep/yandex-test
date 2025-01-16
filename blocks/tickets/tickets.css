@@ -2,6 +2,8 @@
 @import url('./__text/_color_red/tickets__text_color_red.css');
 @import url('./__text/_color_black/tickets__text_color_black.css');
 @import url('./__text/_position_down/tickets__text_position_down.css');
+@import url('./__text/_resolution_low/tickets__text_resolution_low.css');
+@import url('./__text/_resolution_high/tickets__text_resolution_high.css');
 @import url('./__group/tickets__group.css');
 @import url('./__pic/tickets__pic.css');
 @import url('./__info/tickets__info.css');
